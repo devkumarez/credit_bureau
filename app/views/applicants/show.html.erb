@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @applicant.email %>
+</p>
+
+<p>
+  <strong>Pan card:</strong>
+  <%= @applicant.pan_card %>
+</p>
+
+<p>
+  <strong>Aadhar number:</strong>
+  <%= @applicant.aadhar_number %>
+</p>
+
+<p>
+  <strong>Bank account number:</strong>
+  <%= @applicant.bank_account_number %>
+</p>
+
+<p>
+  <strong>Bank account ifsc:</strong>
+  <%= @applicant.bank_account_ifsc %>
+</p>
+
+<p>
+  <strong>Monthly recurring inflow:</strong>
+  <%= @applicant.monthly_recurring_inflow %>
+</p>
+
+<p>
+  <strong>Monthly recurring outflow:</strong>
+  <%= @applicant.monthly_recurring_outflow %>
+</p>
+
+<%= link_to 'Edit', edit_applicant_path(@applicant) %> |
+<%= link_to 'Back', applicants_path %>

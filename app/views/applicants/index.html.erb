@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Applicants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Credit Limit</th>
+      <th>System Recommendation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applicants.each do |applicant| %>
+      <tr>
+        <td><%= applicant.email %></td>
+        <td><%= applicant.credit_limit %></td>
+        <td><%= formatted_recommendation(applicant.recommendation) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Applicant', new_applicant_path %>
